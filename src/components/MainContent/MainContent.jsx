@@ -8,7 +8,7 @@ const MainContent = () => {
     const [moviesData_popular, setMoviesData_popular] = useState([]);
 
     useEffect(() => {
-        GET("movie", "popular", "", "&language=en-US&page=1").then(data => setMoviesData_popular(data))
+        GET("movie", "popular", "&language=en-US&page=1").then(data => setMoviesData_popular(data))
     }, []);
     
     return(
