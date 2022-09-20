@@ -1,0 +1,37 @@
+.MovieCard {
+    width: 280px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    // box-shadow: 0 0 6px rgba(255, 255, 255, 0.397);
+    background: rgb(20, 20, 20);
+
+    h4 {
+        font-weight: 500;
+    }
+
+    img {
+        width: 260px;
+    }
+
+    
+}
+
+.MovieCard:hover {
+    transform: scale(1.025);
+
+    h4:nth-of-type(1) {
+        color: rgb(253, 53, 53);
+        text-shadow: 0 0 4px rgb(253, 53, 53);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .MovieCard:hover {
+        transform: none;
+    }
+}

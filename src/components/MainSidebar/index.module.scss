@@ -1,0 +1,31 @@
+.MainSidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    z-index: 2;
+
+    h2 {
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+            justify-content: center;
+        }
+    }
+}
+
+.MainSidebar::-webkit-scrollbar {
+    display: none;
+}
