@@ -7,7 +7,7 @@ const MainSidebar = ({sWidth}) => {
     const [moviesData_genres, setMoviesData_genres] = useState([]);
     
     useEffect(() => {
-        GET("genre", "movie", "&language=en-US&page=1").then(data => setMoviesData_genres(data))        
+        GET("genre", "movie/list", "&language=en-US&page=1").then(data => setMoviesData_genres(data))        
     } , []);
 
     const genres = moviesData_genres.genres;
